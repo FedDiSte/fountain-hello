@@ -1,0 +1,97 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "**/*"
+  ],
+  "extends": [
+    "@sky-uk/eslint-config-sky-typescript"
+  ],
+  "plugins": [
+    "@nx"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": [
+                  "*"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@nx/typescript"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
+      "extends": [
+        "plugin:@nx/javascript"
+      ],
+      "rules": {}
+    }
+  ],
+  "rules": {
+    "camelcase": "off",
+    "import/no-extraneous-dependencies": "off",
+    // "import/no-unresolved": [
+    //   "error",
+    //   {
+    //     "ignore": []
+    //   }
+    // ],
+    "import/named": "off",
+    "react/jsx-fragments": "off",
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "error",
+          "warn",
+          "debug"
+        ]
+      }
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": false
+      }
+    ],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-ignore": "allow-with-description"
+      }
+    ],
+    "jest/max-nested-describe": "off",
+    "jest/valid-expect": "off",
+    "jest/no-identical-title": "off",
+    "jest/require-hook": "off"
+  }
+}
