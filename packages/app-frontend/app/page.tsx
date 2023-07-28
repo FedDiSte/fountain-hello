@@ -7,8 +7,6 @@ export default async function Index() {
    * Note: The corresponding styles are in the ./index.css file.
    */
 
-  // @ts-ignore descrizione
-
   return (
     <div className={styles.page}>
       <div className="wrapper">
@@ -16,7 +14,7 @@ export default async function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome app-frontend 👋
+              Welcome Fontanelle 👋
             </h1>
           </div>
 
