@@ -1,19 +1,21 @@
 {
   "name": "app-frontend",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/app-frontend",
+  "sourceRoot": "apps/app-frontend",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nx/next:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/packages/app-frontend"
+        "outputPath": "dist/apps/app-frontend"
       },
       "configurations": {
         "development": {
-          "outputPath": "packages/app-frontend"
+          "outputPath": "apps/app-frontend"
         },
         "production": {}
       }
@@ -44,9 +46,11 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
-        "jestConfig": "packages/app-frontend/jest.config.ts",
+        "jestConfig": "apps/app-frontend/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -58,9 +62,13 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["packages/app-frontend/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/app-frontend/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     }
   },
