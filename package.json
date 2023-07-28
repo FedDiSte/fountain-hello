@@ -8,8 +8,9 @@
   },
   "private": true,
   "devDependencies": {
-    "@nestjs/schematics": "^10.0.1",
-    "@nestjs/testing": "^10.0.2",
+    "@nestjs/mapped-types": "^1.2.0",
+    "@nestjs/schematics": "9.2.0",
+    "@nestjs/testing": "9.4.2",
     "@nx/cypress": "16.5.5",
     "@nx/eslint-plugin": "16.2.1",
     "@nx/jest": "16.5.5",
@@ -48,9 +49,11 @@
     "typescript": "5.0.4"
   },
   "dependencies": {
-    "@nestjs/common": "^10.0.2",
-    "@nestjs/core": "^10.0.2",
-    "@nestjs/platform-express": "^10.0.2",
+    "@nestjs/common": "9.4.2",
+    "@nestjs/config": "^2.3.2",
+    "@nestjs/core": "9.4.2",
+    "@nestjs/swagger": "6.3.0",
+    "@nestjs/platform-express": "9.4.2",
     "@sky-uk/eslint-config-sky-typescript": "^35.0.1",
     "axios": "^1.0.0",
     "eslint": "^8.45.0",
