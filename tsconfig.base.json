@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@fountain-hello/mocks": ["libs/mocks/src/index.ts"],
       "@fountain-hello/types": ["libs/types/src/index.ts"],
       "@fountain-hello/utils": ["libs/utils/src/index.ts"]
     }
