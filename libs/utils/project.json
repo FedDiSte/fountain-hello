@@ -1,24 +1,24 @@
 {
-  "name": "interfaces",
+  "name": "utils",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/interfaces/src",
+  "sourceRoot": "libs/utils/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/interfaces",
-        "main": "libs/interfaces/src/index.ts",
-        "tsConfig": "libs/interfaces/tsconfig.lib.json",
-        "assets": ["libs/interfaces/*.md"]
+        "outputPath": "dist/libs/utils",
+        "main": "libs/utils/src/index.ts",
+        "tsConfig": "libs/utils/tsconfig.lib.json",
+        "assets": ["libs/utils/*.md"]
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/interfaces/**/*.ts"]
+        "lintFilePatterns": ["libs/utils/**/*.ts"]
       }
     }
   },
