@@ -5,6 +5,8 @@
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "./src/types/declarations",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -38,9 +40,4 @@
     "**/*.stories.ts",
     "**/*.stories.js"
   ],
-  "references": [
-    {
-      "path": "./tsconfig.storybook.json"
-    }
-  ]
 }
