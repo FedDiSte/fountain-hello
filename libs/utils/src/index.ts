@@ -1,1 +1,1 @@
-export * from './lib/utils';
+export * as HttpUtils from './http/http.utils';

@@ -89,6 +89,16 @@
         "ts-ignore": "allow-with-description"
       }
     ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [
+          "@fountain-hello/utils",
+          "@fountain-hello/types",
+          "@fountain-hello/mocks"
+        ]
+      }
+    ],
     "jest/max-nested-describe": "off",
     "jest/valid-expect": "off",
     "jest/no-identical-title": "off",
